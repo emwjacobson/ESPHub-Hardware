@@ -23,9 +23,9 @@ The ESP8266 has a single Analog pin that is broken out on the pin labeled ADC. T
 
 ## Pads
 
-The pads labeled "vDiv" connects an integrated voltage divider to the Analog pin of the ESP8266. If these solder pads are bridged, then another analog device cannot be connected to the ADC pin. The voltage divider maps 0-9.33v to 0-1v. This was intended to measure battery level if the device is powered through V+/GND pins (explained more below).
+The pads labeled "vDiv" connects an integrated voltage divider to the Analog pin of the ESP8266. If these solder pads are bridged, then another analog device cannot be connected to the ADC pin. The voltage divider maps 0-13.195v to 0-1v. This was intended to measure battery level if the device is powered through V+/GND pins (explained more below).
 
-The large V+ and GND are intended to be used if the device is being powered through an external source such as a battery. The V+ pad is connected to the voltage regulator, the USB V+, and voltage divider. **Note**: Do not connect the micro-USB port and power the V+ pad at the same time. They are directly connected to eachother and a difference in voltage might cause harm to either power source. The voltage regulator supports voltages from 4.8v up to 15v and the voltage divider can measure from 0v to 9.33v.
+The large V+ and GND are intended to be used if the device is being powered through an external source such as a battery. The V+ pad is connected to the voltage regulator, the USB V+, and voltage divider. **Note**: Do not connect the micro-USB port and power the V+ pad at the same time. They are directly connected to eachother and a difference in voltage might cause harm to either power source. The voltage regulator supports voltages from 4.8v up to 15v and the voltage divider can measure from 0v to 13.195v.
 
 The pads labeled WAKE connect the Wake and Reset pins of the ESP8266. Bridging these allows the device to wake up from it's Deep Sleep mode. Without these pins bridges, the device will not be able to wake itself and will need to be power cycled in order to return to normal operation.
 
